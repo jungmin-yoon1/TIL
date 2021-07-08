@@ -12,7 +12,7 @@ public:
 	DocWriter();
 	DocWriter(const string& fileName, const string& content);
 	//소멸자
-	~DocWriter(); 
+	~DocWriter();
 
 	//파일 이름을 지정
 	void SetFileName(const string& fileName);
@@ -21,7 +21,7 @@ public:
 	void SetContent(const string& content);
 
 	//파일에 텍스트 저장
-	void Write();
+	virtual void Write();
 
 protected:
 	string _fileName; //문서를 저장할 파일의 이름 저장

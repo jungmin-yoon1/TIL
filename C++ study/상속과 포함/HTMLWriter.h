@@ -11,7 +11,7 @@ public:
 	~HTMLWriter(); //소멸자
 
 	//텍스트를 파일로 저장
-	void Write();
+	virtual void Write();
 
 	//폰트 지정
 	void SetFont(const string& fontName, int fontSize, const string& fontColor);
